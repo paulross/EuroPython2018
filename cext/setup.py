@@ -161,7 +161,18 @@ test_requirements = [
 #     zip_safe=False,
 # )
 
-# from distutils.core import setup, Extension
+from Cython.Build import cythonize
+
+ext_modules = [
+    # CPython modules
+    Extension("spam", ["cpython/spammodule.c"]),
+    Extension("cp_demo", ["cpython/cp_demo.c"]),
+]
+
+# Cythonise and add Cython modules
+ext_modules += cythonize("cython/cy_hello.pyx")
+ext_modules += cythonize("cython/fib.pyx")
+ext_modules += cythonize("cython/primes.pyx")
 
 setup(
     name="ep2018cext",
@@ -170,10 +181,7 @@ setup(
     author_email='apaulross@gmail.com',
     url='https://github.com/paulross/EuroPython2018',
     description='Helpdesk code during EuroPython2018. C extensions, Cython and pybind11.',
-    ext_modules=[
-        Extension("spam", ["cpython/spammodule.c"]),
-        Extension("cp_demo", ["cpython/cp_demo.c"]),
-    ],
+    ext_modules=ext_modules,
     install_requires = ['pybind11>=2.2'],
     tests_require = test_requirements,
 )
