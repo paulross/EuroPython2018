@@ -12,6 +12,8 @@
 		C35AA26C210B22F90058CDEA /* Python in Frameworks */ = {isa = PBXBuildFile; fileRef = C35AA26B210B22F80058CDEA /* Python */; };
 		C35AA26E210B2ACB0058CDEA /* spammodule.c in Sources */ = {isa = PBXBuildFile; fileRef = C35AA26D210B2ACB0058CDEA /* spammodule.c */; };
 		C35AA271210B39D80058CDEA /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35AA26F210B39D80058CDEA /* Rectangle.cpp */; };
+		C35AA274210B3C740058CDEA /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35AA272210B3C740058CDEA /* Person.cpp */; };
+		C35AA276210B3E680058CDEA /* pyb_Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35AA275210B3E680058CDEA /* pyb_Person.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +37,9 @@
 		C35AA26D210B2ACB0058CDEA /* spammodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = spammodule.c; sourceTree = "<group>"; };
 		C35AA26F210B39D80058CDEA /* Rectangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle.cpp; sourceTree = "<group>"; };
 		C35AA270210B39D80058CDEA /* Rectangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		C35AA272210B3C740058CDEA /* Person.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Person.cpp; sourceTree = "<group>"; };
+		C35AA273210B3C740058CDEA /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		C35AA275210B3E680058CDEA /* pyb_Person.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pyb_Person.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +95,9 @@
 		C35AA265210B22080058CDEA /* pybind11 */ = {
 			isa = PBXGroup;
 			children = (
+				C35AA272210B3C740058CDEA /* Person.cpp */,
+				C35AA273210B3C740058CDEA /* Person.h */,
+				C35AA275210B3E680058CDEA /* pyb_Person.cpp */,
 			);
 			path = pybind11;
 			sourceTree = "<group>";
@@ -171,6 +179,8 @@
 				C35AA25C210B1E9E0058CDEA /* main.cpp in Sources */,
 				C35AA26E210B2ACB0058CDEA /* spammodule.c in Sources */,
 				C35AA26A210B22080058CDEA /* cp_demo.c in Sources */,
+				C35AA274210B3C740058CDEA /* Person.cpp in Sources */,
+				C35AA276210B3E680058CDEA /* pyb_Person.cpp in Sources */,
 				C35AA271210B39D80058CDEA /* Rectangle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
