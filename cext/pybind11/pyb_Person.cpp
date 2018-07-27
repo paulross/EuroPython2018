@@ -38,12 +38,12 @@ PYBIND11_MODULE(pbPerson, m) {
     )
     // Slightly quirky pattern for pybind11, do not overload the functions in C++
     // but bind them together in the pybind11 file.
-//    .def("first", (void (Person::*)(const std::string&)) &Person::set_first, "")
-//    .def("first", (const std::string& (Person::*)()) &Person::get_first, "")
-//    .def("last", (void (Person::*)(const std::string&)) &Person::set_last, "")
-//    .def("last", (const std::string& (Person::*)()) &Person::get_last, "")
-//    .def("number", &Person::number, "Documentation for number()")
+    .def("first", (void (Person::*)(const std::string&)) &Person::set_first, "")
+    .def("first", (const std::string& (Person::*)()) &Person::get_first, "")
+    .def("last", (void (Person::*)(const std::string&)) &Person::set_last, "")
+    .def("last", (const std::string& (Person::*)()) &Person::get_last, "")
     .def("name", &Person::name, "Documentation for name()")
+    .def_property_readonly("number", &Person::number, "Documentation for number")
     ;
 
 }

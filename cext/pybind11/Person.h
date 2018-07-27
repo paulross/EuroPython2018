@@ -29,6 +29,7 @@ public:
 private:
     std::string m_first;
     std::string m_last;
+public:
     int m_number;
 };
 

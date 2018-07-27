@@ -21,6 +21,7 @@ To build all of them:
 
 ```
 python setup.py build_ext --inplace
+python setup_pybind11.py build_ext --inplace
 ```
 
 
