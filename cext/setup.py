@@ -171,7 +171,8 @@ setup(
     url='https://github.com/paulross/EuroPython2018',
     description='Helpdesk code during EuroPython2018. C extensions, Cython and pybind11.',
     ext_modules=[
-        Extension("cp_demo", ["cpython/cp_demo.c"])
+        Extension("spam", ["cpython/spammodule.c"]),
+        Extension("cp_demo", ["cpython/cp_demo.c"]),
     ],
     install_requires = ['pybind11>=2.2'],
     tests_require = test_requirements,
