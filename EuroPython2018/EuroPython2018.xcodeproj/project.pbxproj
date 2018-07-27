@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C35AA25C210B1E9E0058CDEA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35AA25B210B1E9E0058CDEA /* main.cpp */; };
+		C35AA26A210B22080058CDEA /* cp_demo.c in Sources */ = {isa = PBXBuildFile; fileRef = C35AA269210B22080058CDEA /* cp_demo.c */; };
+		C35AA26C210B22F90058CDEA /* Python in Frameworks */ = {isa = PBXBuildFile; fileRef = C35AA26B210B22F80058CDEA /* Python */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C35AA256210B1E9E0058CDEA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C35AA258210B1E9E0058CDEA /* EuroPython2018 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EuroPython2018; sourceTree = BUILT_PRODUCTS_DIR; };
+		C35AA25B210B1E9E0058CDEA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C35AA267210B22080058CDEA /* setup.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = setup.py; sourceTree = "<group>"; };
+		C35AA269210B22080058CDEA /* cp_demo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cp_demo.c; sourceTree = "<group>"; };
+		C35AA26B210B22F80058CDEA /* Python */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = Python; path = ../../../../../../../../Library/Frameworks/Python.framework/Versions/3.6/Python; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C35AA255210B1E9E0058CDEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C35AA26C210B22F90058CDEA /* Python in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C35AA24F210B1E9D0058CDEA = {
+			isa = PBXGroup;
+			children = (
+				C35AA26B210B22F80058CDEA /* Python */,
+				C35AA25A210B1E9E0058CDEA /* EuroPython2018 */,
+				C35AA259210B1E9E0058CDEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C35AA259210B1E9E0058CDEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C35AA258210B1E9E0058CDEA /* EuroPython2018 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C35AA25A210B1E9E0058CDEA /* EuroPython2018 */ = {
+			isa = PBXGroup;
+			children = (
+				C35AA264210B22080058CDEA /* cext */,
+				C35AA25B210B1E9E0058CDEA /* main.cpp */,
+			);
+			path = EuroPython2018;
+			sourceTree = "<group>";
+		};
+		C35AA264210B22080058CDEA /* cext */ = {
+			isa = PBXGroup;
+			children = (
+				C35AA265210B22080058CDEA /* pybind11 */,
+				C35AA266210B22080058CDEA /* cython */,
+				C35AA267210B22080058CDEA /* setup.py */,
+				C35AA268210B22080058CDEA /* cpython */,
+			);
+			name = cext;
+			path = ../../cext;
+			sourceTree = "<group>";
+		};
+		C35AA265210B22080058CDEA /* pybind11 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = pybind11;
+			sourceTree = "<group>";
+		};
+		C35AA266210B22080058CDEA /* cython */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cython;
+			sourceTree = "<group>";
+		};
+		C35AA268210B22080058CDEA /* cpython */ = {
+			isa = PBXGroup;
+			children = (
+				C35AA269210B22080058CDEA /* cp_demo.c */,
+			);
+			path = cpython;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C35AA257210B1E9E0058CDEA /* EuroPython2018 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C35AA25F210B1E9E0058CDEA /* Build configuration list for PBXNativeTarget "EuroPython2018" */;
+			buildPhases = (
+				C35AA254210B1E9E0058CDEA /* Sources */,
+				C35AA255210B1E9E0058CDEA /* Frameworks */,
+				C35AA256210B1E9E0058CDEA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EuroPython2018;
+			productName = EuroPython2018;
+			productReference = C35AA258210B1E9E0058CDEA /* EuroPython2018 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C35AA250210B1E9E0058CDEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Paul Ross";
+				TargetAttributes = {
+					C35AA257210B1E9E0058CDEA = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = C35AA253210B1E9E0058CDEA /* Build configuration list for PBXProject "EuroPython2018" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C35AA24F210B1E9D0058CDEA;
+			productRefGroup = C35AA259210B1E9E0058CDEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C35AA257210B1E9E0058CDEA /* EuroPython2018 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C35AA254210B1E9E0058CDEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C35AA25C210B1E9E0058CDEA /* main.cpp in Sources */,
+				C35AA26A210B22080058CDEA /* cp_demo.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C35AA25D210B1E9E0058CDEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/Python.framework/Versions/3.6/include/python3.6m/,
+					/Users/paulross/venvs/EuroPython2018/include/site/python3.6,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C35AA25E210B1E9E0058CDEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/Python.framework/Versions/3.6/include/python3.6m/,
+					/Users/paulross/venvs/EuroPython2018/include/site/python3.6,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C35AA260210B1E9E0058CDEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks/Python.framework/Versions/3.6",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C35AA261210B1E9E0058CDEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks/Python.framework/Versions/3.6",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C35AA253210B1E9E0058CDEA /* Build configuration list for PBXProject "EuroPython2018" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C35AA25D210B1E9E0058CDEA /* Debug */,
+				C35AA25E210B1E9E0058CDEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C35AA25F210B1E9E0058CDEA /* Build configuration list for PBXNativeTarget "EuroPython2018" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C35AA260210B1E9E0058CDEA /* Debug */,
+				C35AA261210B1E9E0058CDEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C35AA250210B1E9E0058CDEA /* Project object */;
+}
