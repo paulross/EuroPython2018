@@ -11,6 +11,7 @@
 		C35AA26A210B22080058CDEA /* cp_demo.c in Sources */ = {isa = PBXBuildFile; fileRef = C35AA269210B22080058CDEA /* cp_demo.c */; };
 		C35AA26C210B22F90058CDEA /* Python in Frameworks */ = {isa = PBXBuildFile; fileRef = C35AA26B210B22F80058CDEA /* Python */; };
 		C35AA26E210B2ACB0058CDEA /* spammodule.c in Sources */ = {isa = PBXBuildFile; fileRef = C35AA26D210B2ACB0058CDEA /* spammodule.c */; };
+		C35AA271210B39D80058CDEA /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35AA26F210B39D80058CDEA /* Rectangle.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,8 @@
 		C35AA269210B22080058CDEA /* cp_demo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cp_demo.c; sourceTree = "<group>"; };
 		C35AA26B210B22F80058CDEA /* Python */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = Python; path = ../../../../../../../../Library/Frameworks/Python.framework/Versions/3.6/Python; sourceTree = "<group>"; };
 		C35AA26D210B2ACB0058CDEA /* spammodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = spammodule.c; sourceTree = "<group>"; };
+		C35AA26F210B39D80058CDEA /* Rectangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle.cpp; sourceTree = "<group>"; };
+		C35AA270210B39D80058CDEA /* Rectangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 		C35AA266210B22080058CDEA /* cython */ = {
 			isa = PBXGroup;
 			children = (
+				C35AA26F210B39D80058CDEA /* Rectangle.cpp */,
+				C35AA270210B39D80058CDEA /* Rectangle.h */,
 			);
 			path = cython;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 				C35AA25C210B1E9E0058CDEA /* main.cpp in Sources */,
 				C35AA26E210B2ACB0058CDEA /* spammodule.c in Sources */,
 				C35AA26A210B22080058CDEA /* cp_demo.c in Sources */,
+				C35AA271210B39D80058CDEA /* Rectangle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

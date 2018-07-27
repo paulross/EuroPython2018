@@ -173,6 +173,7 @@ ext_modules = [
 ext_modules += cythonize("cython/cy_hello.pyx")
 ext_modules += cythonize("cython/fib.pyx")
 ext_modules += cythonize("cython/primes.pyx")
+ext_modules += cythonize("cython/rect.pyx")
 
 setup(
     name="ep2018cext",
